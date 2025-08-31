@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family:'mehdi' ;
+    src: url('/src/B_Yekan/Yekan.woff') format('woff');
+}
+
+body{
+    font-family: mehdi;
+}

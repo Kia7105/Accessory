@@ -1,0 +1,264 @@
+  <!DOCTYPE html>
+  <html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./src/css/main2.css">
+    <link rel="stylesheet" href="./src/B_Yekan/Yekan.woff">
+  </head>
+  <body>  
+  <header class="pt-4 bg-white font-yekan">
+    <nav class="w-full shadow-sm border-b border-gray-300">
+      <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+  <!--Image Logo-->
+        <div class="flex items-center">
+          <img class="w-24 h-auto" src="./src/Image/logo.png" alt="logo">
+        </div>
+  <!--Search Bar-->
+        <form class="hidden md:flex relative right-4 mr-3 ml-20 border border-gray-300 rounded-xl overlflow-hidden">
+          <img class="w-6 h-6 mt-1 mr-2" src="./src/Image/search-521.png" alt="Search Logo">
+          <input type="text" placeholder="جستوجو محصولات" class="relative bottom-1 pt-2 px-3 py-1 ml-35 test-sm focus:outline-none">
+        </form>
+  <!--Top Mini Menu-->
+        <ul class="hidden md:flex ml-auto text-sm font-medium text-gray-400">
+          <li><a href="#" class="ml-8 hover:text-blue-950 transition">باشگاه مشتریان</a></li>
+          <li><a href="#" class="ml-8 hover:text-blue-950 transition">بلاگ</a></li>
+          <li><a href="#" class="ml-8 hover:text-blue-950 transition">ارتباط ما</a></li>
+          <li><a href="#" class="ml-8 hover:text-blue-950 transition">درباره ما</a></li>
+        </ul>
+  <!--Cart Button-->
+        <div class="relative left-4 p-2 rounded-xl border border-gray-100 bg-gray-100 shadow-sm cursor-pointer">
+          <img class="w-6 h-6" src="./src/Image/red-shopping-cart-10934.png" alt="">
+          <span class="absolute -top-2 -right-2 bg-red-400 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">0</span>
+        </div>
+  <!--Register Button-->
+        <div>
+          <a href="#" class="relative text-gray-700 hover:text-blue-600 text-xl"></a>
+          <a href="#" class="text-sm bg-blue-700 text-white px-2 py-2.5 rounded-xl hover:bg-blue-950">ورود و ثبت نام</a>
+        </div>
+      </div>
+  <!--Dropdown Menus-->
+      <ul class="w-full flex justify-center flex-wrap gap-[55px] text-gray-500 text-[15px] text-sm font-medium pt-3 py-4">
+        <li><a href="#" class="text-orange-600 border-b-[3px] pb-4 border-amber-600">خانه</a></li>
+        <li class="relative group"><a href="#" class="hover:text-orange-600 hover:border-b-[3px] pb-4 hover:border-amber-600">لوازم جانبی موبایل و کامپیوتر <span>&#9662;</span></a>
+          <ul class="absolute top-full right-0 mt-[18px] w-48 bg-white border border-gray-200 shadow-sm opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50">
+            <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-800">ماوس و کیبورد و پدموس</a></li>
+            <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-800">اسپیکر</a></li>
+            <li class="relative group"><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-800">تجهیزات ذخیره سازی</a>
+              <ul class="absolute -top-[10px] right-[190px] mt-[10px] w-48 bg-white border border-gray-200 shadow-sm transition">
+                <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-800">فلش مموری</a></li>
+                <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-800">کارت حافظه</a></li>
+                <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-800">هارد اکسترنال</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#" class="hover:text-orange-600 hover:border-b-[3px] pb-4 hover:border-amber-600">کابل - مبدل - رابط <span>&#9662;</span></a></li>
+        <li><a href="#" class="hover:text-orange-600 hover:border-b-[3px] pb-4 hover:border-amber-600">لوازم تولید محتوا <span>&#9662;</span></a></li>
+        <li><a href="#" class="hover:text-orange-600 hover:border-b-[3px] pb-4 hover:border-amber-600">لوازم شبکه <span>&#9662;</span></a></li>
+        <li><a href="#" class="hover:text-orange-600 hover:border-b-[3px] pb-4 hover:border-amber-600">کنسول بازی و لوازم جانبی <span>&#9662;</span></a></li>
+        <li><a href="#" class="hover:text-orange-600 hover:border-b-[3px] pb-4 hover:border-amber-600">لوازم خانگی و شخصی <span>&#9662;</span></a></li>
+        <li><a href="#" class="hover:text-orange-600 hover:border-b-[3px] pb-4 hover:border-amber-600">برند ها <span>&#9662;</span></a></li>
+      </ul>
+    </nav>
+  </header>
+<!--Slider-->
+  <div class="slider">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper slids"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+<!--Discount Cards-->
+  <div class="max-w-screen-xl mx-auto">
+    <div class="relative top-[62px] h-[750px] px-4 pb-4 md:px-12 md:pb-12 xl:mx-4 bg-gray-200 xl:rounded-xl mb-8">
+      <div class="py-6">
+        <div class="flex justify-center items-center md:justify-between">
+          <div class="flex items-center gap-2 font-bold text-2xl md:text-4xl">
+            <img class="w-[30px] h-[30px]" src="./src/Image/pngimg.com - percent_PNG68.png" alt="Percentage">
+            <span class="text-gray-500">تخفیف‌های روزانه دسترسی</span>
+          </div>  
+        </div>
+      </div>
+      
+      <div class="cards">
+        
+</div>
+<!--Categories-->
+<div class="cat">
+<h2 class="relative bottom-[65rem] mr-[28rem] text-3xl font-bold mb-5 text-gray-800">دسته‌بندی‌های منتخب</h2>
+<div class="relative bottom-[65rem] swiper custom-slider">
+  <div class="swiper-wrapper slid2">
+   
+  </div>
+  
+  <!-- دکمه‌ها -->
+  <div class="custom-button-next"></div>
+  <div class="custom-button-prev"></div>
+  </div>
+  
+
+</div>
+
+<!--Slider Cards2-->
+<div class="mx-auto">
+  <div class="relative left-[5rem] top-[6rem] h-[580px] w-[1280px]  px-4 pb-4 md:px-12 md:pb-12 xl:mx-4 bg-gray-200 xl:rounded-xl mb-8">
+    <h1 class="relative top-[2rem] text-[1.8rem] text-gray-500 ">همین الان موجود شد...</h1>
+  </div>
+  <div class="relative -top-[26rem]">
+    <div class="swiper product-slider max-w-6xl mx-auto my-12 px-4">
+      <div class="product-wrapper slid3">
+  
+      </div>
+  
+      <!-- دکمه‌ها -->
+      <div class="swiper-button-next product-next text-black"></div>
+      <div class="swiper-button-prev product-prev text-black"></div>
+    </div>
+  </div>
+</div>
+
+
+<!--Benefits Text-->
+<div class="ben">
+  <section class="hidden sm:block max-w-6xl mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-10">چرا دسترسی رو برای خرید انتخاب کنیم؟</h2>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-sm text-right">
+    
+    <!-- امکان خرید حضوری -->
+    <div class="bg-white p-6 w-[300px]">
+    <div class="mb-4 flex justify-center ">
+    <img class="w-[70px] h-[70px]" src="https://www.dastresi.com/images/icons/icon2.png" alt="icon">
+    </div>
+    <h3 class="text-gray-500 font-semibold mb-2 text-center text-[19px]">مشاوره تخصصی برای خرید محصول</h3>
+    <p class="text-center" >برای خرید هر محصول با تیم دسترسی در ارتباط باشید تا بهترین انتخاب رو انجام دهید.</p>
+    </div>
+    
+    <!-- ارسال سریع -->
+    <div class="bg-white p-6 w-[300px]">
+      <div class="mb-4 flex justify-center ">
+      <img class="w-[70px] h-[70px]" src="https://www.dastresi.com/images/icons/icon1.png" alt="icon">
+      </div>
+      <h3 class="text-gray-500 font-semibold mb-2 text-center text-[19px]">قیمت مناسب با بالاترین کیفیت</h3>
+      <p class="text-center">گروه دسترسی در تلاش است که کالای با کیفیت را با مناسب‌ترین قیمت به دست شما برساند.</p>
+      </div>
+    
+    <!-- قیمت مناسب با بالاترین کیفیت -->
+    <div class="bg-white p-6 w-[300px]">
+      <div class="mb-4 flex justify-center ">
+      <img class="w-[70px] h-[70px]" src="https://www.dastresi.com/images/icons/icon3.png" alt="icon">
+      </div>
+      <h3 class=" text-gray-500 font-semibold mb-2 text-center text-[19px]">ارسال سریع</h3>
+      <p class="text-center">ارسال از طریق تیپاکس، پست پیشتاز و پیک موتوری (ویژه تهران) صورت می گیرد.</p>
+      </div>
+    
+    <!-- مشاوره تخصصی -->
+    <div class="bg-white p-6 w-[300px]">
+      <div class="mb-4 flex justify-center ">
+      <img class="w-[70px] h-[70px]" src="https://www.dastresi.com/images/icons/icon4.png" alt="icon">
+      </div>
+      <h3 class=" text-gray-500 font-semibold mb-2 text-center text-[19px]">امکان خرید حضوری</h3>
+      <p class="text-center">مشتری گرامی جهت خرید حضوری می‌توانید به آدرس مندرج در پایین سایت مراجعه نمایید.</p>
+      </div>
+    
+    </div>
+    </section>
+    
+</div>
+
+<!--Slider Cards3-->
+<div class="por mx-auto">
+  <div class="relative left-[5rem] top-[10rem] h-[580px] w-[1280px]  px-4 pb-4 md:px-12 md:pb-12 xl:mx-4 bg-gray-200 xl:rounded-xl mb-8">
+    <h1 class="relative top-[2rem] text-[1.8rem] text-gray-500 ">پرفروش‌ ترین محصولات</h1>
+  </div>
+  <div class="relative bottom-[22rem]">
+    <div class="products-slider max-w-6xl mx-auto my-12 px-4">
+      <div class="products-wrapper slid4">
+  
+      </div>
+  
+      <!-- دکمه‌ها -->
+      <div class="products-button-next text-black"></div>
+      <div class="products-button-prev text-black"></div>
+    </div>
+  </div>
+</div>
+
+<!--Brands-->
+<div class="brandz">
+  <div>
+  <h1 class="relative bottom-[20rem] left-[3rem] text-[25px] text-gray-500">محبوب ترین برندها</h1>
+</div>
+
+<div class="swiper brandSwiper w-[1200px] relative bottom-[17rem]">
+  <div class="swiper-wrapper slid5">
+ 
+  </div>
+
+  <!-- دکمه‌ها -->
+  <div class="swiper-button-next brand-next !w-10 !h-10 !rounded-full !bg-white !shadow-md flex items-center justify-center after:!text-sm after:!font-bold -translate-x-6"></div>
+  <div class="swiper-button-prev brand-prev !w-10 !h-10 !rounded-full !bg-white !shadow-md flex items-center justify-center after:!text-sm after:!font-bold translate-x-6"></div>
+</div>
+</div>
+
+<!--Footer-->
+<div id="footz2" class="foot">
+  <footer id="footz" class="w-[95.01rem] h-[400px] relative left-[11.5rem] bg-gray-100 text-gray-800 text-sm mt-10 border-t border-gray-300">
+    <div class="w-[200px] h-[200px] relative right-[13rem] top-[20rem]">
+      <img src="./src/Image/logo.png" alt="Dastresi Logo">
+    </div>
+    <div class="mr-[13.5rem] relative top-[15rem]">
+      <p>با ما در ارتباط باشید :</p>
+    </div>
+    <div class="mr-[22rem] relative top-[13.7rem]">
+      <img src="https://www.dastresi.com/images/icons/instagram.png" alt="">
+    </div>
+    <div class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+
+      <!-- توضیحات فروشگاه -->
+      <div class="relative right-[20rem]">
+        <h2 class="text-[1.5rem] font-bold mb-4">فروشگاه اینترنتی دسترسی</h2>
+        <p class="text-gray-500 text-[15px] w-[30rem] leading-relaxed text-justify">
+          فروشگاه دسترسى فعاليت خود را از سال ١٣٨٩ به صورت فروش فيزيكى كالا در حوزه لوازم جانبى كامپيوتر و موبايل در تهران شروع كرد واز سال ١٣٩٨ از طريق بيج اينستاگرام وارد فروش آنلاين شدوبه خاطر ارائه كالاى اصلى و مشاوره هاى دقيق در بازه بسيار كوتاهى توانست اعتماد بسيارى از مشتريانش را جلب كند و سرانجام در سال ١٣٩٩ فروش از طريق سايت را هم به فعاليت هاى خود اضافه كرد تا اينكه بتواند با بررسى دقيق كالاها انتخاب صحيح شما را به ارمغان آورد. و امروز دسترسى فعاليت خود را در زمينه آداپتور موبايل، كابل شارژ، پاوربانک، ساعت هوشمند، هندزفرى وهدست، لوازم گيمينگ، باترى و شارژر، لوازم شبكه، تجهيزات ذخيره سازى، گيرنده ديجيتال و هزاران گجت جذاب ادامه می دهد
+        </p>
+      </div>
+  
+      <!-- دسترسی سریع -->
+      <div class="relative right-[26rem]">
+        <h3 class="text-[1.5rem] font-bold mb-4">دسترسی سریع</h3>
+        <ul class="space-y-3">
+          <li><a href="#" class="text-gray-500 hover:text-black">باشگاه مشتریان</a></li>
+          <li><a href="#" class="text-gray-500 hover:text-black">سوالات متداول</a></li>
+          <li><a href="#" class="text-gray-500 hover:text-black">بلاگ</a></li>
+          <li><a href="#" class="text-gray-500 hover:text-black">شرایط و قوانین</a></li>
+          <li><a href="#" class="text-gray-500 hover:text-black">ارتباط با ما</a></li>
+          <li><a href="#" class="text-gray-500 hover:text-black">درباره ما</a></li>
+        </ul>
+      </div>
+  
+      <!-- لوگو و نماد و ارتباط -->
+      <div class="flex flex-col items-center justify-between space-y-4">
+        <div class="flex flex-col items-center">
+          <img src="./src/Image/logo (1).png" alt="eNAMAD" class="relative right-[90px] top-[50px] h-[130px] w-[130px] mb-1">
+        </div>
+      </div>
+    </div>
+  
+    <!-- نوار پایین فوتر -->
+    <div class="bg-blue-600 text-white text-center py-3 mt-6 text-sm">
+      تمامی حقوق این سایت محفوظ و متعلق به فروشگاه اینترنتی دسترسی می‌باشد.
+    </div>
+  </footer>
+  
+</div>
+
+
+    <script type="module" src="./src/main.js"></script>
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+  </body>
+  </html>
